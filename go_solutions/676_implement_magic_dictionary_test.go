@@ -10,7 +10,7 @@ type MagicDictionary struct {
 	Words map[int][]string
 }
 
-func Constructor() MagicDictionary {
+func Constructor676() MagicDictionary {
 	return MagicDictionary{Lens: [101]int{}, Words: map[int][]string{}}
 }
 
@@ -45,7 +45,7 @@ func (this *MagicDictionary) Search(searchWord string) bool {
 }
 
 func Test676(t *testing.T) {
-	md := Constructor()
+	md := Constructor676()
 	md.BuildDict([]string{"hello", "leetcode"})
 	prints.ExpPrintln(
 		md.Search("hello"),
